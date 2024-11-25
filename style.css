@@ -1031,6 +1031,9 @@ footer {
     line-height: 1.6;
 }
 @media (max-width: 768px){
+    .text-section{
+        max-width: 100%;
+    }
     .text-section h2 {
     text-align: center;
     font-size: 1.6rem;
@@ -1089,6 +1092,11 @@ footer {
     margin-left: 280px;
     margin-top: 5%;
     transition: background 0.3s ease;
+}
+@media (max-width: 768px) {
+    .cta1-button{
+        margin-left: 1px;
+    }
 }
 
 .cta1-button:hover {
