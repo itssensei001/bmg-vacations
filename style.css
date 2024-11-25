@@ -32,12 +32,13 @@ header {
   position: fixed; /* Sticks the navbar to the top */
   top: 0;
   width: 100%;
+  height: 80px;
   background-color: white;
   color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 5px 20px;
   transition: all 0.5s ease; /* Smooth collapsing animation */
   z-index: 1000;
 }
@@ -115,31 +116,27 @@ header {
 }
 @media (max-width: 768px) {
     .top-nav{
-        max-width: 10%;
-        margin-left: 70px;
-        margin-right: 1px;
+        display: none;
     }
-    .nav-item {
-        padding: 6px 9px;
-        border-radius: 15px;
-        font-size: 0.5em; /* Smaller padding for mobile */
-    }
+    
     .logo-container {
-        max-width: 20%;
+        max-width: 50%;
         padding: 0%;
         margin-left: -5px;
     }
-    .top-nav {
-  gap: 5px;
-}
-    .navbar .logo {
+     .navbar .logo {
   width: 40px;
+  margin-top: 30px;
   height: auto;
   transition: width 0.5s ease;
 }
 
 .navbar.condensed .logo {
+  margin-top: 15px;
   width: 25px; /* Shrink logo when collapsed */
+}
+.navbar.condensed{
+    padding: 30px 20px;
 }
 .navbar{
     max-width: 100%;
@@ -174,6 +171,12 @@ nav a:hover {
 .dropdown-menu {
     display: none; /* Hidden by default */
     position: relative;
+}
+@media (max-width: 768px) {
+    .dropdown-menu {
+        display: block;
+        position: relative;
+    }
 }
 
 .navbar.condensed .dropdown-menu {
@@ -1026,6 +1029,17 @@ footer {
     font-size: 1.2rem;
     color: #555;
     line-height: 1.6;
+}
+@media (max-width: 768px){
+    .text-section h2 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.text-section p {
+    text-align: center;
+    font-size: 1rem;
+}
 }
 
 /* Video Container */
