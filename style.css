@@ -129,7 +129,6 @@ header {
     .top-nav {
   gap: 5px;
 }
-
     .navbar .logo {
   width: 40px;
   height: auto;
@@ -139,7 +138,9 @@ header {
 .navbar.condensed .logo {
   width: 25px; /* Shrink logo when collapsed */
 }
-
+.navbar{
+    max-width: 100%;
+}
 .navbar h1 {
   font-size: 0.7em;
   transition: font-size 0.5s ease;
