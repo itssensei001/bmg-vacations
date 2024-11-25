@@ -1455,15 +1455,35 @@ p1 {
 .contact-us-container {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Adjust space between the sections */
-    flex-wrap: wrap; /* Ensures sections wrap in mobile view */
+    gap: 30px;
+    max-width: 100%; /* Prevent container from exceeding screen width */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    padding: 10px; /* Ensure spacing within the container */
+}
+@media (max-width: 768px) {
+    .contact-us-container{
+        width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn’t increase width */
+    }
 }
 
 .top-contact-area {
     display: flex;
-    gap: 30px; /* Add space between the two sections */
-    flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
-    justify-content: space-between;
+    flex-wrap: wrap; /* Allow child elements to wrap */
+    justify-content: center; /* Center elements within the container */
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .top-contact-area {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        gap: 15px;
+    }
 }
 
 /* Contact Form Section */
@@ -1558,9 +1578,13 @@ p1 {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
     justify-content: center;
     gap: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow child elements to wrap */
+    justify-content: center; /* Center elements within the container */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .social-contacts ul li {

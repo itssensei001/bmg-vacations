@@ -86,15 +86,14 @@ observer.observe(video);
  // JavaScript to Capture Input and Generate Dynamic Mailto Link
         function sendEmail() {
             const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
 
-            if (name && email && message) {
+            if (name && message) {
                 // Create the email body with input values
-                const emailBody = `${encodeURIComponent(message)}`;
+                const emailBody = `Name: ${encodeURIComponent(name)}%0A%0A${encodeURIComponent(message)}`;
 
                 // Create the mailto link
-                const mailtoLink = `mailto:bmgvacations@gmail.com?subject=Contact Form Submission&body=${emailBody}`;
+                const mailtoLink = `mailto:bmgvacations@gmail.com?subject=Contact Us Form Submission&body=${emailBody}`;
 
                 // Open the user's email client with the pre-filled information
                 window.location.href = mailtoLink;
