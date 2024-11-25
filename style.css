@@ -114,13 +114,49 @@ header {
 }
 @media (max-width: 768px) {
     .top-nav{
-        display: none;
-        margin-left: 1px;
+        margin-left: 70px;
     }
     .nav-item {
         padding: 7px 10px;
-        font-size: 0.6em; /* Smaller padding for mobile */
+        font-size: 0.5em; /* Smaller padding for mobile */
     }
+    .logo-container {
+        padding: 0%;
+        margin-left: -10px;
+    }
+    .top-nav {
+  gap: 5px;
+}
+
+    .navbar .logo {
+  width: 40px;
+  height: auto;
+  transition: width 0.5s ease;
+}
+
+.navbar.condensed .logo {
+  width: 25px; /* Shrink logo when collapsed */
+}
+
+.navbar h1 {
+  font-size: 0.7em;
+  transition: font-size 0.5s ease;
+  margin-bottom: 1px;
+}
+
+.navbar.condensed h1 {
+  font-size: 0.5em; /* Reduce font size when collapsed */
+}
+.navbar .slogan{
+    font-size: 0.7em;
+    font-family: monospace;
+    color: black;
+    transition: font-size 0.5s ease;
+}
+
+.navbar.condensed .slogan {
+  font-size: 0.5em; /* Reduce title font size when condensed */
+}
 }
 
 nav a:hover {
