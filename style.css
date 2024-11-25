@@ -114,7 +114,7 @@ header {
 }
 @media (max-width: 768px) {
     .top-nav{
-        
+        display: none;
         margin-left: 1px;
     }
     .nav-item {
@@ -968,7 +968,7 @@ footer {
 
 /* Text Section */
 .text-section {
-    max-width: 600px;
+    max-width: relative;
     text-align: left;
     flex: 1;
 }
