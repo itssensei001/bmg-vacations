@@ -4,38 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMG Vacations</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Our Properties - BMG Vacations</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the same CSS -->
 </head>
 
 <body>
-    <!-- Header Section -->
     <header class="navbar">
         <div class="logo-container">
             <img src="images/logo.png" alt="BMG Vacations Logo" class="logo">
-          <h1>BMG VACATIONS</h1>  
-          <h2 class="slogan">Elegance at its highest</h2>
+            <h1>BMG VACATIONS</h1>
+            <h2 class="slogan">Elegance at its highest</h2>
         </div>
-            <nav class="top-nav">
+        <nav class="top-nav">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="properties.html" class="nav-item">Our Properties</a>
+            <a href="about.html" class="nav-item">About Us</a>
+            <a href="reviews.html" class="nav-item">Reviews</a>
+            <a href="contact.html" class="nav-item">Contact Us</a>
+        </nav>
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu">
+            <button class="dropdown-button">
+                &#9776; <!-- Unicode for the hamburger icon -->
+            </button>
+            <div class="dropdown-content">
                 <a href="home.html" class="nav-item">Home</a>
                 <a href="properties.html" class="nav-item">Our Properties</a>
                 <a href="about.html" class="nav-item">About Us</a>
                 <a href="reviews.html" class="nav-item">Reviews</a>
                 <a href="contact.html" class="nav-item">Contact Us</a>
-            </nav>
-            <!-- Dropdown Menu -->
-            <div class="dropdown-menu">
-                <button class="dropdown-button">
-                    &#9776; <!-- Unicode for the hamburger icon -->
-                </button>
-                <div class="dropdown-content">
-                    <a href="home.html" class="nav-item">Home</a>
-                    <a href="properties.html" class="nav-item">Our Properties</a>
-                    <a href="about.html" class="nav-item">About Us</a>
-                    <a href="reviews.html" class="nav-item">Reviews</a>
-                    <a href="contact.html" class="nav-item">Contact Us</a>
-                </div>
             </div>
+        </div>
     </header>
 
     <main>
@@ -46,36 +45,120 @@
 
     <script src="script.js"></script>
 
-
-    <!-- Properties Section -->
-    <section id="properties">
-        <h2>Our Properties</h2>
-        <div class="property">
-            <img src="images/property1.jpg" alt="Cozy Beach House">
-            <h3>Cozy Beach House</h3>
-            <p>Location: Malibu</p>
-            <p>Price: $200/night</p>
-            <a href="https://wa.me/1234567890?text=Hi,%20is%20this%20property%20available?" target="_blank">
-                Inquire on WhatsApp
-            </a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Your Gateway to Unforgettable Getaways Across Kenya</h2>
+            <p>Looking for the perfect holiday home? BMG Vacations has it all!
+            </p>
+            <a href="properties.html" class="cta-button">Explore Our Properties</a>
         </div>
-        <!-- Add more properties as needed -->
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions? Click below to inquire on WhatsApp.</p>
-        <a href="https://wa.me/1234567890?text=Hi%20BMG%20Vacations,%20I%20have%20a%20question%20about%20your%20properties."
-            target="_blank" class="whatsapp-button">
-            Message on WhatsApp
-        </a>
+    <section class="grid-layout">
+        <div class="card">
+            <img src="images/cozy apartments.jpg" alt="Cozy">
+            <div class="card-content">
+                <h3>From Cozy Apartments,</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/choice 1.jpg" alt="Pool">
+            <div class="card-content">
+                <h3>To Stunning Villas With Pools, </h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/sea views.jpg" alt="Sea views">
+            <div class="card-content">
+                <h3>Sea Views,</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/more.jpg" alt="more">
+            <div class="card-content">
+                <h3>And More! </h3>
+            </div>
+        </div>
     </section>
+    <section class="video-tour" id="videoTour">
+        <div class="content">
+            <div class="text-section">
+                <h2>Take A Tour</h2>
+                <p>
+                    Welcome to your dream holiday destination—a luxurious 3-bedroom apartment in Nyali, perfectly
+                    situated behind City Mall.
+                    Designed for ultimate comfort, this retreat features spacious, en-suite rooms with AC, king-size or
+                    double beds, and
+                    modern entertainment, including a 55-inch smart TV, unlimited WiFi, and Plex for movies.
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 BMG Vacations. All rights reserved.</p>
-    </footer>
+                    <br>Enjoy the convenience of a fully equipped kitchenette, housekeeping services, and premium
+                    amenities like two sparkling
+                    swimming pools, spacious balconies, ample parking, and a rooftop sea view. Just a minute’s walk to
+                    the beach and close
+                    to social amenities, this apartment offers both relaxation and accessibility.
+                    <br>Perfect for families or groups, this luxurious retreat accommodates up to 8 guests. At only Ksh
+                    20,000 per night,
+                    indulge in a truly unforgettable holiday in Nyali.
+                </p>
+                <a href="Apartment_in_Nyali_Citymall.html" class="cta1-button">Check it out &#8594 </a>
+            </div>
+            <div class="video-container">
+                <video muted autoplay loop playsinline poster="images/ANC 6.jpg">
+                    <source src="images/Homepage video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    <section class="video-tour1" id="videoTour1">
+        <div class="content1">
+            <!-- Video Section -->
+            <div class="video-container1">
+                <video muted autoplay loop playsinline poster="images/BBH 2.jpg">
+                    <source src="images/Homepage video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Text Section -->
+            <div class="text-section1">
+                <h2>The Coastal Escape You Deserve</h2>
+                <p>
+                    Discover the perfect getaway at our charming 2-bedroom apartment in Bamburi Homes, offering a prime
+                    location for
+                    your coastal adventures. Just opposite Butterfly Pavilion and a quick 5-minute drive to Go Kart
+                    Shanzu,
+                    this
+                    retreat is ideal for relaxation and fun.
+                    <br>Nestled just two rows from the beach, enjoy the perfect mix of comfort and convenience, with
+                    modern
+                    amenities
+                    designed for an unforgettable stay.
+                    <br>Book today and turn your coastal dreams into reality for only Ksh 12,000 per night!
+                </p>
+                <a href="Bamburi_Beach_Homes.html" class="cta2-button">&#8592 Check it out</a>
+            </div>
+
+            <!-- Images Section -->
+            <div class="pics-container">
+                <h2>And many more!</h2>
+
+                <!-- Image Container with Background and Foreground Images -->
+                <div class="image-container">
+                    <div class="image-background">
+                        <img src="images/AN5 5.jpg" alt="Back Image">
+                    </div>
+
+                    <!-- Foreground Image with Show More -->
+                    <div class="image-foreground">
+                        <img src="images/CMLM 3.jpg" alt="Front Image">
+                        <a href="properties.html" class="show-more-button">Show More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 </body>
 
 <!-- Footer Section -->
