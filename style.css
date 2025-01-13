@@ -170,7 +170,6 @@ nav a:hover {
 /* Dropdown Menu */
 .dropdown-menu {
     display: none; /* Hidden by default */
-    position: relative;
 }
 @media (max-width: 768px) {
     .dropdown-menu {
@@ -1767,4 +1766,524 @@ p1 {
     .featured-reviews {
         grid-template-columns: 1fr;
     }
+}
+
+ /* Hero Section */
+.hero1 {
+    position: relative;
+    height: 70vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Text color for content */
+    overflow: hidden; /* Ensures the video doesn't spill out */
+}
+
+.hero1 .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the container without distortion */
+    z-index: -1; /* Places the video behind the content */
+}
+
+.hero1-content {
+    z-index: 1; /* Ensures content is above the video */
+    position: relative;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Improves text readability */
+}
+
+.hero1 h2 {
+    font-size: 2.5rem; /* Adjust size */
+    margin-bottom: 10px;
+}
+
+.hero1 p {
+    font-size: 1.2rem; /* Adjust size */
+}
+
+.hero1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for more contrast */
+    z-index: 1;
+}
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & General Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Container for experiences section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title for the section */
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* Grid Layout for Experience Cards */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Experience Card */
+.experience-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+/* Image for each experience */
+.experience-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.experience-card:hover .experience-image {
+    opacity: 0.8;
+}
+
+/* Info Section of Each Experience */
+.experience-info {
+    padding: 15px;
+}
+
+.experience-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.experience-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+}
+
+/* Explore Button */
+.explore-btn {
+    background-color: #3498db;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .experience-card {
+        margin: 0 10px;
+    }
+
+    .explore-btn {
+        width: 100%; /* Full-width buttons on small screens */
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero1 h2 {
+        font-size: 2rem; /* Slightly smaller heading on small screens */
+    }
+
+    .hero1 p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+
+    .experience-title {
+        font-size: 1.5rem; /* Make titles smaller on mobile */
+    }
+
+    .experience-description {
+        font-size: 0.9rem; /* Adjust description font */
+    }
+
+    .experience-card {
+        margin-bottom: 20px; /* Add space between experience cards */
+    }
+}
+
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-luxury-cruise {
+    background-image: url('images/Yatch\ A\ main.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.hero-luxury-cruise::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-luxury-cruise h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-luxury-cruise p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Experience Overview Section */
+.experience-overview {
+    padding: 60px 0;
+    background-color: #f0f0f0;
+}
+
+.experience-overview .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overview-left {
+    width: 45%;
+    padding-right: 30px;
+}
+
+.overview-right {
+    width: 45%;
+}
+
+.overview-left h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.included-list {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.included-list li {
+    margin-bottom: 10px;
+    color: #7f8c8d;
+}
+
+.experience-overview p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #2980b9;
+}
+
+.overview-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Gallery Section */
+.image-gallery {
+    padding: 40px 0;
+    background-color: #f0f0f0; /* Light grey background to make images stand out */
+}
+
+.image-gallery h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Gallery Container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 15px;
+    justify-items: center;
+}
+
+/* Gallery Item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image Styling */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect on image */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .experience-overview .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .overview-left,
+    .overview-right {
+        width: 100%;
+        padding-right: 0;
+    }
+    .image-gallery h3 {
+        font-size: 1.8rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust columns for smaller screens */
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+}
+/* Price Style */
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c; /* Red color for emphasis */
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Hero Section */
+.hero-luxury-cruise1 {
+    background-image: url('images/Yatch\ B\ main.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.hero-luxury-cruise1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content1 {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-luxury-cruise1 h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-luxury-cruise1 p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
+.hero-parallax {
+    background-image: url('images/welcome1.gif');
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Tour Highlights */
+.highlights-section {
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.highlight-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.highlight-item:hover img {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.hero-video {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero-video video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.image-grid .grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid .grid-item:hover img {
+    transform: scale(1.1);
 }
