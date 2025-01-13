@@ -27,6 +27,12 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Toggle dropdown visibility on button click (for mobile view)
+dropdownButton.addEventListener('click', () => {
+    dropdownContent.classList.toggle('show'); // Toggle the 'show' class on the dropdown content
+});
+
+
 // Toggle dropdown menu visibility on button click
 dropdownButton.addEventListener('hover', () => {
     // Check the current display state of the dropdown menu and toggle it
