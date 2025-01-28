@@ -354,6 +354,9 @@ section {
 
 /* Properties Page Card */
 .pcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -364,7 +367,7 @@ section {
 
 .pcard img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -2286,4 +2289,146 @@ body {
 
 .image-grid .grid-item:hover img {
     transform: scale(1.1);
+}
+.video-header {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px; /* Adds spacing below the video header */
+}
+
+.video-header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-header h2 {
+    z-index: 1;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 2px;
+    text-align: left; 
+}
+.listing10 {
+        background-image: url('images/EBA8.jpg'); /* Replace with the path to your desired background image */
+        background-size: cover;
+        background-position: center;
+        height: 70vh; /* Adjust height as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white; /* Text color */
+        padding: 20px;
+        position: relative;
+    } 
+
+    .listing10::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; 
+        background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for text readability */
+        z-index: 1;
+    }
+
+    .listing10 h2 {
+        font-size: 2.5rem; /* Adjust size */
+        margin-bottom: 100px;
+        margin-right: 600px;
+        text-align: left; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
+    }
+    .listing11 {
+        background-image: url('images/SU\ main.jpg'); /* Replace with the path to your desired background image */
+        background-size: cover;
+        background-position: center;
+        height: 70vh; /* Adjust height as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white; /* Text color */
+        padding: 20px;
+        position: relative;
+    } 
+
+    .listing11::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; 
+        background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for text readability */
+        z-index: 1;
+    }
+
+    .listing11 h2 {
+        font-size: 2.5rem; /* Adjust size */
+        margin-bottom: 100px;
+        margin-right: 600px;
+        text-align: left; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
+    }
+    .listing12 {
+        background-image: url('images/PS\ main.jpg'); /* Replace with the path to your desired background image */
+        background-size: cover;
+        background-position: center;
+        height: 70vh; /* Adjust height as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white; /* Text color */
+        padding: 20px;
+        position: relative;
+    } 
+
+    .listing12::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; 
+        background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for text readability */
+        z-index: 1;
+    }
+
+    .listing12 h2 {
+       font-size: 2.5rem; /* Adjust size */
+        margin-bottom: 100px;
+        margin-right: 600px;
+        text-align: left; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
+    }
+@media (max-width: 767px) {
+    .listing12, .listing10, .listng11{
+        height: 50vh; /* Adjust height on mobile to fit screen better */
+    }
+
+    .listing12 h2, .listing10 h2, .listng11 h2{
+        font-size: 1.8rem; /* Smaller font size for mobile */
+        margin-bottom: 2px; /* Reduced margin on mobile */
+        margin-top: 30px;
+        margin-right: 200px;
+        margin-left: 1px;
+        text-align: left; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
+    }
 }
