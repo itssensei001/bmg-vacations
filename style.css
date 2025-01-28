@@ -2435,3 +2435,100 @@ body {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
     }
 }
+.rates-section {
+    background-color: #ffffff;
+    background-image: url('images/tropical-bg.jpg'); /* Add a subtle tropical background */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    padding: 50px 20px;
+    margin: 40px 0;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.rates-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rates-section .section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #003049; /* Deep blue for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rates-container {
+    margin-bottom: 40px;
+}
+
+.rates-card {
+    background: rgba(255, 255, 255, 0.8); /* Transparent white card */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.rates-card p {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.rates-card p:last-child {
+    border-bottom: none;
+}
+
+.rates-card span {
+    color: #f4a261; /* Highlighted price color */
+    font-weight: bold;
+}
+
+.package-container {
+    margin-top: 20px;
+}
+
+.package-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.package-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #003049;
+}
+
+.package-list li .checkmark {
+    font-size: 1.5rem;
+    color: #2a9d8f; /* Green checkmark */
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rates-section {
+        padding: 30px 10px;
+    }
+
+    .rates-card, .package-list {
+        font-size: 1rem;
+    }
+}
